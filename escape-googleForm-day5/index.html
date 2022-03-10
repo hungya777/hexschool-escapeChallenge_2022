@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六角西餐廳</title>
+    <!-- Bootstrap5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- 自定義CSS    -->
+    <link rel="stylesheet" href="all.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center my-4">六角西餐廳</h2>
+        <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSewG8hnvJYWYrf5nv8EXd9OjNYLGA7Hv9JeL7UOxJ-cF-mN-w/formResponse" method="post" class="row mb-3 g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">姓名</label>
+                <input type="name" class="form-control" name="entry.883036550" id="inputName" required>
+                <div class="invalid-feedback">
+                    【姓名】欄位不可為空，請輸入!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputTel" class="form-label">電話</label>
+                <input type="tel" class="form-control" name="entry.207427977" id="inputTel" required>
+                <div class="invalid-feedback">
+                    【電話】欄位不可為空，請輸入!
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="reserveDate" class="form-label">日期</label>
+                <input type="date" name="entry.1135267724" class="form-control" id="reserveDate" required>
+                <div class="invalid-feedback">
+                    請選擇【日期】!
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="inputPeopleNum" class="form-label">用餐人數</label>
+                <select class="form-select" name="entry.2087240112" aria-label="Default select example" id="peopleNum" required>
+                    <option selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <div class="invalid-feedback">
+                    請選擇【用餐人數】!
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="inputOthers" class="form-label">其它項目</label>
+                <div class="form-check">
+                    <input class="form-check-input" name="entry.1185743263" type="checkbox" value="需要兒童座椅" id="kidChairCheck">
+                    <label class="form-check-label" for="kidChairCheck">
+                    需要兒童座椅
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="entry.1185743263" type="checkbox" value="素食餐點" id="veganCheck">
+                    <label class="form-check-label" for="veganCheck">
+                    素食餐點
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="entry.1185743263" type="checkbox" value="吸煙區"id="smokeCheck">
+                    <label class="form-check-label" for="smokeCheck">
+                    吸煙區
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-dark" id="submit">送出</button>
+                </div>
+            </div>  
+    </div>
+
+    
+    <!-- bootstrap5 Javascript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+    <!-- Bootstrap5 表單送出驗證 JS部分-->
+    <script>
+        //Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict';
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.needs-validation');
+        
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+        
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+    </script>
+</body>
+</html>

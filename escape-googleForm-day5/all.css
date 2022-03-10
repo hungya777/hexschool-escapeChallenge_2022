@@ -1,0 +1,4 @@
+/* 去邊框圓角 */
+.form-control, .form-select, .btn{
+    border-radius: 0px;
+}
